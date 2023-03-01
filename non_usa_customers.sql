@@ -1,3 +1,5 @@
-SELECT FirstName, LastName, CustomerId, Country
-FROM customer
+SELECT FirstName || ' ' || LastName AS FullName, 
+       CustomerId, 
+       Country 
+FROM customer 
 WHERE Country <> 'USA';
